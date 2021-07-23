@@ -1,0 +1,17 @@
+{
+    "alabama": {
+      "mostFrequentCommand": "CNN"
+    },
+    "florida": {
+      "mostFrequentCommand": "TURN OFF THE TV"
+    },
+    "maryland": {
+      "mostFrequentCommand": "GAME OF THRONES"
+    },
+
+  "topCommandsNationally": [
+    "GAME OF THRONES",
+    "TURN OFF THE TV",
+    "CNN"
+  ]
+}

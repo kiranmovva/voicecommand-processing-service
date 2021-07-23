@@ -1,0 +1,143 @@
+{
+    "alabama": [
+      {
+        "speaker": "FredZhang",
+        "command": "open youtube"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "Open Prime"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "channel 221"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "open youtuBE"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "NBC"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "Turn of TV"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "open pRime"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "Open PRime "
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "Open PRime"
+      },{
+        "speaker": "FredZhang",
+        "command": "open youtube"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "NBC"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "open channel 240"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "open Disney"
+      },
+      {
+        "speaker": "FredZhang",
+        "command": "Open Prime"
+      }
+
+    ],
+    "florida": [
+      {
+        "speaker": "ThomasBrown",
+        "command": "Open Prime"
+      },
+      {
+        "speaker": "AlishaBrown",
+        "command": "Stranger Things"
+      },
+      {
+        "speaker": "MarcusBrown",
+        "command": "Game of Thrones"
+      },
+      {
+        "speaker": "MissyBrown",
+        "command": "Turn off the TV"
+      },
+      {
+        "speaker": "MissyBrown",
+        "command": "Turn off the TV"
+      },{
+        "speaker": "ThomasBrown",
+        "command": "Open Prime"
+      },
+      {
+        "speaker": "AlishaBrown",
+        "command": "STAR Sports"
+      },
+      {
+        "speaker": "MarcusBrown",
+        "command": "AXN"
+      },
+      {
+        "speaker": "MissyBrown",
+        "command": "Turn off the TV"
+      },
+      {
+        "speaker": "MissyBrown",
+        "command": "Turn off the TV"
+      }
+    ],
+    "maryland": [
+      {
+        "speaker ": "Thomas Brown",
+        "command": "Show me movies "
+      },
+      {
+        "speaker ": "Alisha Brown",
+        "command": "Stranger Things "
+      },
+      {
+        "speaker ": "Marcus Brown",
+        "command": "Game of Thrones"
+      },
+      {
+        "speaker ": "Missy Brown",
+        "command": "Game of Thrones"
+      },
+      {
+        "speaker ": "Missy Brown",
+        "command": "Turn off the TV"
+      },
+      {
+        "speaker ": "Thomas Brown",
+        "command": "Show me movies "
+      },
+      {
+        "speaker ": "Alisha Brown",
+        "command": "Open Prime"
+      },
+      {
+        "speaker ": "Marcus Brown",
+        "command": "Open Prime"
+      },
+      {
+        "speaker ": "Missy Brown",
+        "command": "Game of Thrones"
+      },
+      {
+        "speaker ": "Missy Brown",
+        "command": "Turn off the TV"
+      }
+    ]
+}
