@@ -5,7 +5,7 @@ import  org.springframework.cloud.contract.spec.Contract
         Contract.make {
             request {
                 method 'POST'
-                url('/command')
+                url('/commands')
                 headers {
                     contentType(applicationJson())
                 }
@@ -22,7 +22,7 @@ import  org.springframework.cloud.contract.spec.Contract
         Contract.make {
             request {
                 method 'POST'
-                url('/command')
+                url('/commands')
                 headers {
                     contentType(applicationJson())
                 }
@@ -39,7 +39,7 @@ import  org.springframework.cloud.contract.spec.Contract
         Contract.make {
             request {
                 method 'POST'
-                url('/command')
+                url('/commands')
                 headers {
                     contentType(applicationJson())
                 }

@@ -27,7 +27,7 @@ public class CommandProcessingController {
     private StateCommandResponse stateCommandResponse;
 
     @Synchronized
-    @PostMapping("/command")
+    @PostMapping("/commands")
     public ResponseEntity<StateCommandResponse> getFrequentCommandInfo(@RequestBody Map<String, List<CommandVO>> stateCommandRequest){
         log.debug("CommandProcessingController::getFrequentCommandInfo start");
         stateCommandResponse= commandProcessingService.getFrequentCommandInfo(stateCommandRequest);
