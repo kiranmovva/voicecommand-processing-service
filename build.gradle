@@ -58,7 +58,6 @@ contracts {
 	failOnInProgress=false
 	baseClassForTests='com.comcast.vrex.command.processing.VoicecommadBaseTest'
 }
-/*
 
 contractTest {
 	useJUnitPlatform()
@@ -68,4 +67,3 @@ test {
 	useJUnitPlatform()
 }
 
-*/

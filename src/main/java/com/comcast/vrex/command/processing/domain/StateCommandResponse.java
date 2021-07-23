@@ -3,8 +3,6 @@ package com.comcast.vrex.command.processing.domain;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.databind.ser.std.MapSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,7 +19,7 @@ import java.util.Set;
 public class StateCommandResponse {
 
     @JsonIgnore
-    @JsonAnyGetter(enabled = true)
+    @JsonAnyGetter
     private Map<String,FrequentCommand> frequentCommands;
 
     private Set<String> topCommandsNationally;

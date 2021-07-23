@@ -1,0 +1,159 @@
+{
+  "alabama": [
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best food"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best food"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Best food"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best Songs"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Score"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best food"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best food"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Best food"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Best food"
+    }
+  ],
+  "florida": [
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "AlishaBrown",
+      "command": "Stranger Things"
+    },
+    {
+      "speaker": "MarcusBrown",
+      "command": "Game of Thrones"
+    },
+    {
+      "speaker": "MissyBrown",
+      "command": "Turn off the TV"
+    },
+    {
+      "speaker": "MissyBrown",
+      "command": "Turn off the TV"
+    },
+    {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best food"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    }
+  ],
+  "maryland": [
+    {
+      "speaker ": "Thomas Brown",
+      "command": "Show me movies "
+    },
+    {
+      "speaker ": "Alisha Brown",
+      "command": "Stranger Things "
+    },
+    {
+      "speaker ": "Marcus Brown",
+      "command": "Game of Thrones"
+    },
+    {
+      "speaker ": "Missy Brown",
+      "command": "Game of Thrones"
+    },
+    {
+      "speaker ": "Missy Brown",
+      "command": "Turn off the TV"
+    },   {
+      "speaker": "ThomasBrown",
+      "command": "Show me movies"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "Best food"
+    },
+    {
+      "speaker": "FredZhang",
+      "command": "CNN"
+    }
+  ]
+}

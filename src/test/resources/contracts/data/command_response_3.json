@@ -1,0 +1,16 @@
+{
+  "alabama": {
+    "mostFrequentCommand": "BEST FOOD"
+  },
+  "florida": {
+    "mostFrequentCommand": "CNN"
+  },
+  "maryland": {
+    "mostFrequentCommand": "CNN"
+  },
+  "topCommandsNationally": [
+  "CNN",
+  "BEST FOOD",
+  "SHOW ME MOVIES"
+   ]
+}

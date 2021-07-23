@@ -1,5 +1,4 @@
 {
-  "stateName": {
     "alabama": [
       {
         "speaker": "FredZhang",
@@ -58,5 +57,4 @@
         "command": "Turn off the TV"
       }
     ]
-  }
 }

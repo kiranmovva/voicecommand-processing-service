@@ -2,11 +2,11 @@ package com.comcast.vrex.command.processing.service;
 
 import com.comcast.vrex.command.processing.domain.CommandVO;
 import com.comcast.vrex.command.processing.domain.FrequentCommand;
-import com.comcast.vrex.command.processing.domain.StateCommandRequest;
 import com.comcast.vrex.command.processing.domain.StateCommandResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -20,10 +20,10 @@ public class CommandProcessingServiceImpl implements CommandProcessingService {
     StateCommandResponse stateCommandResponse;
 
     @Override
-    public StateCommandResponse getFrequentCommandInfo(StateCommandRequest stateCommandRequest) {
+    public StateCommandResponse getFrequentCommandInfo(Map<String, List<CommandVO>> stateCommandRequest) {
         log.debug("CommandProcessingServiceImplL::getFrequentCommandInfo start");
-        if (null != stateCommandRequest.getStateName() && !stateCommandRequest.getStateName().isEmpty()) {
-            stateCommandResponse = calculateTopCommand(stateCommandRequest.getStateName());
+        if (!CollectionUtils.isEmpty(stateCommandRequest)) {
+            stateCommandResponse = calculateTopCommand(stateCommandRequest);
         }
         log.debug("CommandProcessingServiceImplL::getFrequentCommandInfo End");
         return stateCommandResponse;
@@ -39,12 +39,13 @@ public class CommandProcessingServiceImpl implements CommandProcessingService {
             long startTime = TimeUnit.NANOSECONDS.toMicros(System.nanoTime());
             //top state command logic
             Map<String, Long> stateMap = commandRequest.getValue().stream().
-                    collect(Collectors.groupingBy(CommandVO -> CommandVO.getCommand().toUpperCase(), Collectors.counting()));
+                    collect(Collectors.groupingBy(CommandVO -> CommandVO.getCommand().toUpperCase()
+                            , Collectors.counting()));
             Optional<String> topStateCommand = stateMap.entrySet()
                     .stream()
                     .max(Comparator.comparing(Map.Entry::getValue)).map(Map.Entry::getKey);
-            log.debug("The Top command for State:{} : Command {} : count {}"
-                    , commandRequest.getKey(), topStateCommand.get(), stateMap.entrySet());
+            log.debug("The Top command for State:{}: count {}"
+                    , commandRequest.getKey(), stateMap.entrySet());
             if (topStateCommand.isPresent()) {
                 FrequentCommand frequentCommandInfo = frequentCommand.builder()
                         .mostFrequentCommand(topStateCommand.get())
