@@ -32,7 +32,7 @@ public class CommandProcessingServiceImpl implements CommandProcessingService {
     private StateCommandResponse calculateTopCommand(Map<String, List<CommandVO>> stateName) {
         log.debug("CommandProcessingServiceImplL::calculateMaxCommand start");
         Map<String, Long> countryWideMap = new HashMap<>();
-        Map<String, FrequentCommand> filterdResponseMap = new HashMap<>();
+        Map<String, FrequentCommand> frequentCommandMap = new HashMap<>();
         for (Map.Entry<String, List<CommandVO>> commandRequest :
                 stateName.entrySet()) {
             FrequentCommand frequentCommand = new FrequentCommand();
@@ -47,18 +47,17 @@ public class CommandProcessingServiceImpl implements CommandProcessingService {
             log.debug("The Top command for State:{}: count {}"
                     , commandRequest.getKey(), stateMap.entrySet());
             if (topStateCommand.isPresent()) {
-                FrequentCommand frequentCommandInfo = frequentCommand.builder()
+                frequentCommandMap.put(commandRequest.getKey(), frequentCommand.builder()
                         .mostFrequentCommand(topStateCommand.get())
                         .startProcessTime(startTime)
                         .stopProcessTime(TimeUnit.NANOSECONDS.toMicros(System.nanoTime()))
-                        .build();
-                filterdResponseMap.put(commandRequest.getKey(), frequentCommandInfo);
+                        .build());
             }
             stateMap.forEach(
                     (key, value) -> countryWideMap.merge(key, value, (v1, v2) -> v1.equals(v2) ? v1 : v1 + v2)
             );
         }
-        stateCommandResponse.setFrequentCommands(filterdResponseMap);
+        stateCommandResponse.setFrequentCommands(frequentCommandMap);
         log.debug("The Top countryWideMap for  count {}", countryWideMap.entrySet());
         //top three commands on country
         Set<String> topThreeCommands =
